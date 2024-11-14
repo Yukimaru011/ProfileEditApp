@@ -34,4 +34,61 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+/* @import "@ionic/angular/css/palettes/dark.system.css"; */
+
+/* global.scss */
+.alert-button-group.sc-ion-alert-md {
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: column;
+  border: none;
+  width: 60%;
+  border-radius: 35px;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-left: 82px;
+}
+
+.alert-button-inner.sc-ion-alert-md {
+  position: relative;
+  justify-content: center;
+  color: white;
+  background-color: #6a9c89;
+  border-radius: 25px;
+  width: auto;
+  min-height: 35px;
+  font-size: large;
+  text-transform: capitalize;
+}
+
+.alert-head.sc-ion-alert-md + .alert-message.sc-ion-alert-md {
+  padding-top: 0;
+  text-align: center;
+}
+
+.alert-wrapper.sc-ion-alert-md {
+  min-width: 90%;
+  height: 200px;
+  border-radius: 40px;
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+}
+
+.alert-button.sc-ion-alert-md {
+  border-radius: 40px;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-margin-end: 8px;
+  margin-inline-end: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  background-color: transparent;
+  color: var(--ion-color-primary, #0055e905);
+  font-weight: 500;
+  text-align: end;
+  text-transform: uppercase;
+  overflow: hidden;
+}

@@ -1,27 +1,133 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e5e9e6;
   margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.profile-containe {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.header {
+  margin-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  color: #16423c;
+}
+
+.profile-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-section h2 {
+  font-size: 18px;
+  color: #333333;
+}
+
+.profile-image {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}
+
+.camera-icon {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #16423c;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.form-container input {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.save-button {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  margin: 35px 0 20px 0;
+  padding: 10px;
+  background-color: #6a9c89;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.custom-alert {
+  --background: #000000;
+  color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+}
+
+.alert-button-group.sc-ion-alert-md {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 68%;
+}
+
+.alert-button:hover {
+  border-radius: 40px;
+  background-color: #45a049;
 }
